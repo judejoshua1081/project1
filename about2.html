@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Harbor Global limited</title>
+       
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css.map">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css.map">
+
+        <link rel="stylesheet" href="icofont/icofont.css">
+        <link rel="stylesheet" href="icofont/icofont.min.css">
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src='main.js'></script>
+
+        <script type="text/javascript" src="bootstrap/js/bootstrap.bundle.js">        </script>
+        <script type="text/javascript" src="bootstrap/js/bootstrap.js">        </script>
+        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js">        </script>    
+        <style>
+            .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+      
+      .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+      }
+      
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+      .glow {
+        font-size: 40px;
+        color: black;
+        margin-left: 10%;
+        top: 25%;
+        position: absolute;
+        /* text-align: center; */
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+      }
+      
+      @-webkit-keyframes glow {
+        from {
+          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+        }
+        
+        to {
+          text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+        }
+      
+      @media screen and (max-height: 450px) {
+        .overlay a {font-size: 20px}
+        .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+        }
+      }
+      </style>
+       
+    </head>
+<body>
+ 
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top " style="height: 15%; " >  
+          <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="index.html">HOME</a>
+              <a href="about us.html">ABOUT</a>
+              <a href="shopping page.html">SHOP-PAGE</a>
+              <a href="termsOfServ.html">TERMS OF SERVICE</a>
+              <a href="contact.html">CONTACT US</a>
+            </div>
+          </div>
+            
+           
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; <h1 class="glow">Harbor Global  </h1></span>
+            
+            <script>
+            function openNav() {
+              document.getElementById("myNav").style.width = "100%";
+            }
+            
+            function closeNav() {
+              document.getElementById("myNav").style.width = "0%";
+            }
+            </script>
+    
+    
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  
+            <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse " id="navbarSupportedContent">     <ul class="navbar-nav mr-4">
+            
+            <li class="nav-item"> 
+              <a class="nav-link " data-value="contact" href="index.html">HOME</a>       </li>
+            <li class="nav-item">
+                <a class="nav-link" data-value="about" href="about us.html">ABOUT</a>        </li>  
+           <li class="nav-item">
+               <a class="nav-link " data-value="portfolio"href="test.html">SHOP-PAGE</a>    
+            </li>
+            <li class="nav-item"> 
+               <a class="nav-link " data-value="blog" href="termsOfServ.html">TERMS OF SERVICE</a>         </li>   
+            
+           <li class="nav-item"> 
+            <a class="nav-link " data-value="contact" href="contact.html"></a>       </li> 
+        
+            <form class="form-inline" action="/action_page.php" style="border-style: hidden;">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-success" type="submit" style="background-color: blue;">Search</button>
+              </form>
+        </ul> 
+           </div>
+        </nav>        <section class="social-icon2" style="position: absolute; top: 10%; left: 80%;">
+            <ul>
+                <li><a href="https://facebook.com"> <img src="images/facebook.png" alt="">   </a></li>
+                <li><a href="https://twitter.com">  <img src="images/twitter.png" alt="">  </a></li>
+                <li><a href="https://feed.com">   <img src="images/feed.png" alt=""> </a></li>
+                
+            </ul>
+        </section>
+    
+        <section class="about">
+            <h1> ABOUT</h1>
+    <div class="row">
+        <!-- left side -->
+
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <img src="images/profile3.JPG" class="img-fluid">
+            <span class="text-justify">front-End Developer</span>
+         </div>
+         <div class="col-lg-8 col-md-8 col-sm-12 desc">
+     
+            <h3>Layla Talker</h3>
+            <p>
+               ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+           </div>
+          </div>
+          </section>
+    
+          <div class="footer-copyright text-center py-4" style="position: absolute; font-size: larger; background-color: blueviolet; width: 100%;">
+            <div> @ Copy-right 2022: Modesty Jude Design </div>
+        </div>
+<body>
+    
+</body>
+</html>

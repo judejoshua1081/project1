@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Harbor Global limited</title>
+       
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css.map">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css.map">
+
+        <link rel="stylesheet" href="icofont/icofont.css">
+        <link rel="stylesheet" href="icofont/icofont.min.css">
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src='main.js'></script>
+
+        <script type="text/javascript" src="bootstrap/js/bootstrap.bundle.js">        </script>
+        <script type="text/javascript" src="bootstrap/js/bootstrap.js">        </script>
+        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js">        </script>    
+        <style>
+          .collapsible {
+            background-color: #777;
+            color: black
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border-color:black;
+            text-align: left;
+            outline: none;
+            font-size: 25px;
+          }
+          
+          .active, .collapsible:hover {
+            background-color: #555;
+          }
+          
+          .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f1f1f1;
+            font-size: 25px;
+          }
+          
+      .overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+.glow {
+  font-size: 40px;
+  color: black;
+  margin-left: 10%;
+  top: 25%;
+  position: absolute;
+  /* text-align: center; */
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+ 
+          </style>
+      </head>
+
+<body>
+    <div class="wrapper">
+            <nav class="navbar navbar-expand-lg fixed-top " style="height: 15%; " >  
+              <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                  <a href="index.html">HOME</a>
+                  <a href="about us.html">ABOUT</a>
+                  <a href="shopping page.html">SHOP-PAGE</a>
+                  <a href="termsOfServ.html">TERMS OF SERVICE</a>
+                  <a href="contact.html">CONTACT US</a>
+                </div>
+              </div>
+        
+       
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; <h1 class="glow">Harbor Global  </h1></span>
+        
+        <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+        </script>
+
+
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  
+        <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse " id="navbarSupportedContent">     <ul class="navbar-nav mr-4">
+        
+        <li class="nav-item"> 
+          <a class="nav-link " data-value="contact" href="index.html">HOME</a>       </li>
+        <li class="nav-item">
+            <a class="nav-link" data-value="about" href="about us.html">ABOUT</a>        </li>  
+       <li class="nav-item">
+           <a class="nav-link " data-value="portfolio"href="test.html">SHOP-PAGE</a>    
+        </li>
+        <li class="nav-item"> 
+           <a class="nav-link " data-value="blog" href="termsOfServ.html">TERMS OF SERVICE</a>         </li>   
+        
+       <li class="nav-item"> 
+        <a class="nav-link " data-value="contact" href="contact.html"></a>       </li> 
+    
+        <form class="form-inline" action="/action_page.php" style="border-style: hidden;">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-success" type="submit" style="background-color: blue;">Search</button>
+          </form>
+    </ul> 
+       </div>
+    </nav>
+
+
+        <section class="social-icon2" style="position: absolute; top: 10%; left: 80%;">
+            <ul>
+                <li><a href="https://facebook.com"> <img src="images/facebook.png" alt="">   </a></li>
+                <li><a href="https://twitter.com">  <img src="images/twitter.png" alt="">  </a></li>
+                <li><a href="https://feed.com">   <img src="images/feed.png" alt=""> </a></li>
+                
+            </ul>
+        </section>
+        
+        
+
+
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+    </didv>
+
+    <section class="tos">
+      <section class="uptex">
+          <h3>Terms Of Service</h3>
+      </section>
+     
+        <section class="socialicon">
+          <i class="icofont-facebook"></i>
+          <i class="icofont-instagram"></i>
+          <i class="icofont-twitter"></i>
+      </section>
+      <section class="tostext">
+          <p>Please read these terms of service ("terms", "terms of service") carefully before using [website] website (the "service") operated by [name] ("us", 'we", "our").
+
+              Conditions of Use
+              
+              We will provide their services to you, which are subject to the conditions stated below in this document. Every time you visit this website, use its services or make a purchase, you accept the following conditions. This is why we urge you to read them carefully.
+              
+              Privacy Policy
+              
+              Before you continue using our website we advise you to read our privacy policy [link to privacy policy] regarding our user data collection. It will help you better understand our practices.
+              
+              Copyright
+              
+              Content published on this website (digital downloads, images, texts, graphics, logos) is the property of [name] and/or its content creators and protected by international copyright laws. The entire compilation of the content found on this website is the exclusive property of [name], with copyright authorship for this compilation by [name].
+              
+              Communications
+              
+              The entire communication with us is electronic. Every time you send us an email or visit our website, you are going to be communicating with us. You hereby consent to receive communications from us. If you subscribe to the news on our website, you are going to receive regular emails from us. We will continue to communicate with you by posting news and notices on our website and by sending you emails. You also agree that all notices, disclosures, agreements, and other communications we provide to you electronically meet the legal requirements that such communications be in writing.
+              
+              Applicable Law
+              
+              By visiting this website, you agree that the laws of the [your location], without regard to principles of conflict laws, will govern these terms of service, or any dispute of any sort that might come between [name] and you, or its business partners and associates.
+              
+              Disputes
+              
+              Any dispute related in any way to your visit to this website or to products you purchase from us shall be arbitrated by state or federal court [your location] and you consent to exclusive jurisdiction and venue of such courts.
+              
+              Comments, Reviews, and Emails
+              
+              Visitors may post content as long as it is not obscene, illegal, defamatory, threatening, infringing of intellectual property rights, invasive of privacy, or injurious in any other way to third parties. Content has to be free of software viruses, political campaigns, and commercial solicitation.
+              
+             
+      </section>
+      <section class="buts">
+          <button class="accept">ACCEPT</button>
+          <button class="decline">DECLINE</button>
+      </section>
+  </section>
+          <!-- <div class="ftr" style="top: 109.5%; position: absolute;">
+            <div> @ Copy-right 2022: modesty jude design</div>
+            
+        </div>
+       -->
+</body>
+</html>
